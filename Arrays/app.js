@@ -91,3 +91,59 @@ for (let index = 0; index < prices.length; index++) {
     prices[index] = prices[index] - offering;
     console.log(`Final price affter discound : ${prices[index]}`)
 }
+
+
+
+// learn about arrays methods
+
+let food_items = ["Rice", "Dal", "Roti", "Dahi"];
+
+console.log(food_items)
+
+food_items.push("chiken", "fish") // push method change the orginal items;
+
+console.log(food_items)
+
+let deleted_items = food_items.pop() // remove the last items and change the main arrays;
+
+// console.log(food_items)
+// console.log(" deleted items is:", deleted_items)
+
+
+// console.log(food_items.toString()); // this line use to convert the arrays to strings; they do not change the orignal arrays they return new arrays;
+
+
+// use of concat to add the two strigs; 
+
+let name = ["Himanshu", "Munna", "dipu"];
+let sinner = ["Harsh", "samer", "Ratnash"];
+let mix = name.concat(sinner);
+
+// console.log(mix)
+
+// unshift() use to add in start;
+// shift() use to remove first elemnts;
+
+
+// slice() to return the a part of strings; //do not change original arrays;
+let slice = sinner.slice(0,2,)
+
+// console.log(slice)
+
+
+// splice() how to use the splice method;
+
+
+let name2 = ["dipu", "nirbhay", "rohit"];
+name2.splice(0, 2, "Aditya","Mohini")
+console.log(name2)
+
+
+// make a intraction questions i)  remove first company 
+let company = ["google", "ubar", "sh groups","Microsoft"];
+company.shift()
+console.log(company)
+company.splice(1,1,"ola")
+console.log(company)
+company.push("amazon")
+console.log(company)
