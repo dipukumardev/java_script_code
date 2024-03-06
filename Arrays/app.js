@@ -70,5 +70,24 @@ console.log(`The avg value of the all students is ${avg}`)
 
 // Q. FOR A GIVEN ARRAYS  WITH PRICES OF 5 ITEMS -> [250, 645, 300, 900, 50 ] ALL ITEMS HAVE AN OFFER OF 10% ON THEM. CHANGE THE ARRAYS TO STORE FINAL PRICE AFTER APPLYING OFFER.
 
+// solving the question useing the for of loos
+
+let i = 0;
+let prices = [250, 645, 300, 900, 50];
+for (let val of prices) {
+    let offer = val / 10;
+    prices[i] = prices[i] - offer;
+
+    // console.log(`value after offer  i is ${i} and = ${prices[i]}`)
+
+    i++;
+}
+
+// solving the question using the for loops;
 
 
+for (let index = 0; index < prices.length; index++) {
+    let offering = index / 10;
+    prices[index] = prices[index] - offering;
+    console.log(`Final price affter discound : ${prices[index]}`)
+}
